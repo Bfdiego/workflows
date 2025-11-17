@@ -1,8 +1,10 @@
 name: hola-mundo
 on:
+  workflow_dispatch:
   push:
     branches:
       - "*"
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
