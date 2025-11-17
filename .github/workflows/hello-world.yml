@@ -1,0 +1,11 @@
+name: hello-world
+on:
+  workflow_dispatch:
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run hello
+        run: python3 hello.py
