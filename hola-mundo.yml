@@ -1,0 +1,11 @@
+name: hola-mundo
+on:
+  push:
+    branches:
+      - "*"
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./hello.sh
